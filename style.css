@@ -229,23 +229,71 @@ html {
 }
 
 
-/* PROGRESS BAR EDUCATION */
-.education-container {
+.education {
+    padding: 10rem 12%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.education h2 {
+    font-size: 4rem;
+    color: #eda6a6;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    width: 60%;
 }
 
 .education-item {
-    width: 50%;
-    text-align: left;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(237, 166, 166, 0.6); 
+    border-left: 5px solid #eda6a6; /* Garis highlight pink di kiri */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px); /* Efek hover naik sedikit */
+    box-shadow: 0px 6px 15px rgba(237, 166, 166, 0.8); /* Glow lebih kuat saat hover */
+}
+
+.education-item h3 {
+    font-size: 2rem;
+    color: #eda6a6;
+    margin-bottom: 0.5rem;
+}
+
+.education-item p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+/* Progress Bar */
+.progress-container {
+    background: #eee;
+    border-radius: 30px;
+    height: 12px;
+    margin-top: 1rem;
 }
 
 .progress-bar {
-    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    background: #eda6a6;
+    width: 50%; 
+}
+
+.progress-bar {
+    width: 50%;
     height: 10px;
-    background: #ddd;
+    background: #eda6a6;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -257,11 +305,28 @@ html {
 }
 
 /* CONTACT SECTION */
+.contact {
+    text-align: center;
+    padding: 5rem 12%;
+}
+
+.contact-header {
+    background: #eda6a6; /* Warna pink */
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/* Form Contact */
 .contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(237, 166, 166, 0.5);
     max-width: 50rem;
     margin: 0 auto;
 }

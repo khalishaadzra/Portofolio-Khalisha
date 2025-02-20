@@ -53,21 +53,19 @@ nav a {
 }
 
 nav a:hover {
-    color: #eda6a6;
-    border-bottom: 3px solid #eda6a6;
+    color: #554535;
+    border-bottom: 3px solid #554535;
 }
 
 section:target ~ header nav a[href="#home"],
 section:target ~ header nav a[href="#about"],
-section:target ~ header nav a[href="#education"],
-section:target ~ header nav a[href="#contact"] {
-    border-bottom: 3px solid transparent; /* Reset semua */
+section:target ~ header nav a[href="#education"]{
+    border-bottom: 3px solid transparent; 
 }
 
 #home:target ~ header nav a[href="#home"],
 #about:target ~ header nav a[href="#about"],
-#education:target ~ header nav a[href="#education"],
-#contact:target ~ header nav a[href="#contact"] {
+#education:target ~ header nav a[href="#education"] {
     border-bottom: 3px solid #eda6a6; /* Efek aktif */
     color: #eda6a6;
 }
@@ -84,14 +82,14 @@ section {
     justify-content: space-between;
     align-items: center;
     gap: 10rem;
-    background-color: rgb(240, 233, 216); /* Warna dasar putih */
+    background-color: rgb(240, 233, 216);
     padding: 10rem 12%;
 }
 
 .home-content {
     flex: 1;
-    text-align: left; /* Teks rata kiri */
-    padding-left: 5rem; /* Lebar maksimum teks */
+    text-align: left; 
+    padding-left: 5rem; 
 }
 
 .home-content h1 {
@@ -124,7 +122,6 @@ span {
     border-radius: 100%; /* Foto berbentuk lingkaran */
     object-fit: cover;
     margin-left: -55rem;
-
     box-shadow: 0 0 15px #eda6a6; /* Efek bayangan lembut */
 }
 
@@ -146,7 +143,7 @@ span {
 
 .social-icons a:hover {
     background-color: #eda6a6;
-    color: rgb(240, 233, 216);
+    color: #554535;
     box-shadow: 0 0 15px #eda6a6;
 }
 
@@ -167,7 +164,7 @@ span {
 
 .btn:hover {
     background-color: #eda6a6;
-    color: rgb(240, 233, 216);
+    color: #554535;
     box-shadow: 0 0 15px #eda6a6;
 }
 
@@ -179,7 +176,7 @@ html {
 .about {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: justify;
     gap: 5rem;
     padding: 10rem 12%;
     background-color: rgb(240, 233, 216);
@@ -195,9 +192,8 @@ html {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 8px solid #eda6a6;
     object-fit: cover;
-    box-shadow: 0 0 15px rgba(237, 166, 166, 0.5);
+    box-shadow: 0 0 15px #eda6a6;
 }
 
 .about-content {
@@ -261,7 +257,7 @@ html {
 
 .education-item:hover {
     transform: translateY(-5px); /* Efek hover naik sedikit */
-    box-shadow: 0px 6px 15px rgba(237, 166, 166, 0.8); /* Glow lebih kuat saat hover */
+    box-shadow: 0px 6px 15px #554535; /* Glow lebih kuat saat hover */
 }
 
 .education-item h3 {
@@ -304,24 +300,50 @@ html {
     transition: width 0.5s ease-in-out;
 }
 
-/* CONTACT SECTION */
-.contact {
+.footer{
     text-align: center;
-    padding: 5rem 12%;
+    padding: 8px;
+    font-size: 1rem;
+    background-color: #ccb59d;
+    height: 30px;
 }
 
-.contact-header {
-    background: #eda6a6; /* Warna pink */
-    padding: 1.5rem;
-    border-radius: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-    margin-bottom: 2rem;
-}
 
-/* Form Contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form Contact
 .contact form {
     background: white;
     padding: 2rem;
@@ -352,4 +374,4 @@ html {
 
 .contact button:hover {
     background: #d88;
-}
+} */

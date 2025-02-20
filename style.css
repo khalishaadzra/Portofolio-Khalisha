@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(240, 233, 216);
+    color: #444;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #ccb59d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #555;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #555;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: #eda6a6;
+    border-bottom: 3px solid #eda6a6;
+}
+
+section:target ~ header nav a[href="#home"],
+section:target ~ header nav a[href="#about"],
+section:target ~ header nav a[href="#education"],
+section:target ~ header nav a[href="#contact"] {
+    border-bottom: 3px solid transparent; /* Reset semua */
+}
+
+#home:target ~ header nav a[href="#home"],
+#about:target ~ header nav a[href="#about"],
+#education:target ~ header nav a[href="#education"],
+#contact:target ~ header nav a[href="#contact"] {
+    border-bottom: 3px solid #eda6a6; /* Efek aktif */
+    color: #eda6a6;
+}
+
+/* HOME SECTION */
+section {
+    min-height: 100vh;
+    padding: 5rem 9%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    background-color: rgb(240, 233, 216); /* Warna dasar putih */
+    padding: 10rem 12%;
+}
+
+.home-content {
+    flex: 1;
+    text-align: left; /* Teks rata kiri */
+    padding-left: 5rem; /* Lebar maksimum teks */
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #eda6a6;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #666;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    color: #888;
+}
+
+/* PROFILE IMAGE */
+.home-img img {
+    width: 400px; /* Sesuaikan ukuran foto */
+    height: 400px;
+    max-width: 400px;
+    border-radius: 100%; /* Foto berbentuk lingkaran */
+    object-fit: cover;
+    margin-left: -55rem;
+
+    box-shadow: 0 0 15px #eda6a6; /* Efek bayangan lembut */
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #eda6a6;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 2rem 1.5rem 2rem 0;
+    transition: 0.3s ease;
+    color: #eda6a6;
+}
+
+.social-icons a:hover {
+    background-color: #eda6a6;
+    color: rgb(240, 233, 216);
+    box-shadow: 0 0 15px #eda6a6;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: rgb(240, 233, 216);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #eda6a6;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #eda6a6;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #eda6a6;
+    color: rgb(240, 233, 216);
+    box-shadow: 0 0 15px #eda6a6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ABOUT SECTION */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10rem 12%;
+    background-color: rgb(240, 233, 216);
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 8px solid #eda6a6;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(237, 166, 166, 0.5);
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 4rem;
+    color: #eda6a6;
+    margin-bottom: 1rem;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.about .btn {
+    margin-top: 1.5rem;
+}
+
+
+/* PROGRESS BAR EDUCATION */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.education-item {
+    width: 50%;
+    text-align: left;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #eda6a6;
+    transition: width 0.5s ease-in-out;
+}
+
+/* CONTACT SECTION */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 2px solid #eda6a6;
+    border-radius: 0.5rem;
+    background: white;
+}
+
+.contact button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background: #eda6a6;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact button:hover {
+    background: #d88;
+}
